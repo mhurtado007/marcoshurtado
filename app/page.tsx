@@ -188,7 +188,7 @@ export default function Home() {
 
       {/* ── REVIEW COLLAGE ── */}
       <section className="relative py-16 px-8" style={{ background: "linear-gradient(120deg, #e8c96a 0%, #f5e0a0 30%, #fdf3d0 60%, #ffffff 100%)" }}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-4 sm:grid-rows-3 gap-3" style={{ height: "calc(90vh - 8rem)" }}>
+        <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4 sm:grid-rows-3 gap-3 sm:h-[calc(90vh-8rem)]">
           {[
             "/photos/review-1.png",
             "/photos/review-2.png",
@@ -203,8 +203,8 @@ export default function Home() {
             "/photos/review-11.png",
             "/photos/review-12.png",
           ].map((src) => (
-            <div key={src} className="shadow-lg overflow-hidden">
-              <Image src={src} alt="Review" width={400} height={500} className="w-full h-full object-contain bg-white" unoptimized />
+            <div key={src} className="overflow-hidden">
+              <Image src={src} alt="Review" width={400} height={500} className="w-full h-auto sm:h-full sm:object-contain" unoptimized />
             </div>
           ))}
         </div>
@@ -223,8 +223,8 @@ export default function Home() {
           </a>
         </div>
 
-        {/* 12-photo grid: 6 columns × 2 rows */}
-        <div className="grid grid-cols-6">
+        {/* photo grid: 2 cols mobile, 6 cols desktop */}
+        <div className="grid grid-cols-2 sm:grid-cols-6">
           {photos.map((src, i) => (
             <div
               key={i}
