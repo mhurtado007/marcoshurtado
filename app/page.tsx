@@ -75,7 +75,7 @@ export default function Home() {
           />
         </div>
         <div className="absolute bottom-8 left-0 right-0 text-center sm:left-auto sm:right-16 sm:bottom-16 sm:text-right">
-          <p className="text-white leading-snug [font-family:var(--font-anton)] [text-shadow:_2px_2px_8px_rgba(0,0,0,0.5)]" style={{ fontSize: "clamp(2rem, 8vw, 4.815rem)" }}>
+          <p className="text-white leading-snug [font-family:var(--font-anton)] [text-shadow:_2px_2px_8px_rgba(0,0,0,0.5)]" style={{ fontSize: "clamp(2.6rem, 10.4vw, 4.815rem)" }}>
             Personal Training<br />anywhere!
           </p>
         </div>
