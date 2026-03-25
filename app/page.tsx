@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FadeIn from "./components/FadeIn";
 
 const testimonials = [
   {
@@ -83,6 +84,7 @@ export default function Home() {
 
       {/* ── CONTACT FORM ── */}
       <section className="bg-white py-20 px-8">
+        <FadeIn>
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-start">
           {/* Left */}
           <div>
@@ -184,10 +186,12 @@ export default function Home() {
             </button>
           </form>
         </div>
+        </FadeIn>
       </section>
 
       {/* ── REVIEW COLLAGE ── */}
       <section className="relative py-16 px-8" style={{ background: "linear-gradient(120deg, #e8c96a 0%, #f5e0a0 30%, #fdf3d0 60%, #ffffff 100%)" }}>
+        <FadeIn>
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-4 sm:grid-rows-3 gap-3 sm:h-[calc(90vh-8rem)]">
           {[
             "/photos/review-1.png",
@@ -208,10 +212,12 @@ export default function Home() {
             </div>
           ))}
         </div>
+        </FadeIn>
       </section>
 
       {/* ── JOIN NOW + PHOTO STRIP ── */}
       <section className="bg-black">
+        <FadeIn>
         <div className="flex justify-center py-10">
           <a
             href="https://buy.stripe.com/28ocQ5fFI3s9d4k5kk"
@@ -242,6 +248,7 @@ export default function Home() {
 
         {/* spacer */}
         <div className="py-10" />
+        </FadeIn>
       </section>
 
       {/* ── FOOTER ── */}
