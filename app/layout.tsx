@@ -31,7 +31,7 @@ export default function RootLayout({
         {/* Sticky transparent header */}
         <header className="fixed top-0 left-0 right-0 z-50 px-8 py-6">
           <Link href="/">
-            <Image src="/logo-white.png" alt="Marcos Hurtado" width={96} height={40} unoptimized />
+            <Image src="/logo-white.png" alt="Marcos Hurtado" width={77} height={32} unoptimized />
           </Link>
         </header>
         {children}
