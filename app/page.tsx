@@ -191,7 +191,6 @@ export default function Home() {
 
       {/* ── REVIEW COLLAGE ── */}
       <section className="relative py-16 px-8" style={{ background: "linear-gradient(120deg, #e8c96a 0%, #f5e0a0 30%, #fdf3d0 60%, #ffffff 100%)" }}>
-        <FadeIn>
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-4 sm:grid-rows-3 gap-3 sm:h-[calc(90vh-8rem)]">
           {[
             "/photos/review-1.png",
@@ -206,13 +205,14 @@ export default function Home() {
             "/photos/review-10.png",
             "/photos/review-11.png",
             "/photos/review-12.png",
-          ].map((src) => (
-            <div key={src} className="overflow-hidden">
-              <Image src={src} alt="Review" width={400} height={500} className="w-full h-auto sm:h-full sm:object-contain" unoptimized />
-            </div>
+          ].map((src, i) => (
+            <FadeIn key={src} delay={i * 60}>
+              <div className="overflow-hidden h-full">
+                <Image src={src} alt="Review" width={400} height={500} className="w-full h-auto sm:h-full sm:object-contain" unoptimized />
+              </div>
+            </FadeIn>
           ))}
         </div>
-        </FadeIn>
       </section>
 
       {/* ── JOIN NOW + PHOTO STRIP ── */}
