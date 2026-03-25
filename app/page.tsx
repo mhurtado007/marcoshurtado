@@ -74,8 +74,8 @@ export default function Home() {
             unoptimized
           />
         </div>
-        <div className="absolute bottom-16 right-16 text-right">
-          <p className="text-white text-[4.815rem] leading-snug [font-family:var(--font-anton)] [text-shadow:_2px_2px_8px_rgba(0,0,0,0.5)]">
+        <div className="absolute bottom-8 left-0 right-0 text-center sm:left-auto sm:right-16 sm:bottom-16 sm:text-right">
+          <p className="text-white leading-snug [font-family:var(--font-anton)] [text-shadow:_2px_2px_8px_rgba(0,0,0,0.5)]" style={{ fontSize: "clamp(2rem, 8vw, 4.815rem)" }}>
             Personal Training<br />anywhere!
           </p>
         </div>
@@ -188,7 +188,7 @@ export default function Home() {
 
       {/* ── REVIEW COLLAGE ── */}
       <section className="relative py-16 px-8" style={{ background: "linear-gradient(120deg, #e8c96a 0%, #f5e0a0 30%, #fdf3d0 60%, #ffffff 100%)" }}>
-        <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4 sm:grid-rows-3 gap-3 sm:h-[calc(90vh-8rem)]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-4 sm:grid-rows-3 gap-3 sm:h-[calc(90vh-8rem)]">
           {[
             "/photos/review-1.png",
             "/photos/review-2.png",
