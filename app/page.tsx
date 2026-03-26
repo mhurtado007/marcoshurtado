@@ -1,5 +1,6 @@
 import Image from "next/image";
 import FadeIn from "./components/FadeIn";
+import ContactForm from "./components/ContactForm";
 
 const testimonials = [
   {
@@ -103,88 +104,7 @@ export default function Home() {
           </div>
 
           {/* Right — Form */}
-          <form className="space-y-5">
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <label className="block text-xs font-semibold text-gray-500 mb-1">
-                  First Name <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="text"
-                  required
-                  className="w-full border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:border-black"
-                />
-              </div>
-              <div>
-                <label className="block text-xs font-semibold text-gray-500 mb-1">
-                  Last Name <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="text"
-                  required
-                  className="w-full border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:border-black"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label className="block text-xs font-semibold text-gray-500 mb-1">
-                Email <span className="text-red-500">*</span>
-              </label>
-              <input
-                type="email"
-                required
-                className="w-full border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:border-black"
-              />
-            </div>
-
-            <div>
-              <label className="block text-xs font-semibold text-gray-500 mb-1">
-                Do you workout from home? <span className="text-red-500">*</span>
-              </label>
-              <input
-                type="text"
-                required
-                className="w-full border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:border-black"
-              />
-            </div>
-
-            <div>
-              <label className="block text-xs font-semibold text-gray-500 mb-2">
-                Goals?
-              </label>
-              <div className="space-y-2">
-                {["Gain muscle", "Weight loss", "Fix posture", "Consistency", "Need help starting"].map(
-                  (goal) => (
-                    <label
-                      key={goal}
-                      className="flex items-center gap-2 text-sm text-gray-700 cursor-pointer"
-                    >
-                      <input type="checkbox" className="w-4 h-4 accent-black" />
-                      {goal}
-                    </label>
-                  )
-                )}
-              </div>
-            </div>
-
-            <div>
-              <label className="block text-xs font-semibold text-gray-500 mb-1">
-                Any questions you have for me?
-              </label>
-              <input
-                type="text"
-                className="w-full border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:border-black"
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="bg-black text-white text-sm font-semibold px-8 py-3 hover:bg-gray-800 transition-colors"
-            >
-              Submit
-            </button>
-          </form>
+          <ContactForm />
         </div>
         </FadeIn>
       </section>
